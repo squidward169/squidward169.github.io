@@ -88,8 +88,61 @@ let information_list=[
         'English',
         '#',
         'Mad Snail'
+    ],
+    [
+        'Nanatsu-no-Taizai',
+        '346',
+        '8.96',
+        'Japan',
+        'English',
+        'https://youtu.be/wxcvbL6o55M',
+        'Suzuki Nakaba'
+    ],
+    [
+        'Haikyuu',
+        '402',
+        '9.13',
+        'Japan',
+        'English',
+        'https://youtu.be/JOGp2c7-cKc',
+        'FURUDATE Haruichi'
+    ],
+    [
+        'Jojos-Bizarre-Adventure',
+        '645',
+        '10 :)',
+        'Japan',
+        'English',
+        'https://youtu.be/XUhVCoTsBaM',
+        'Araki Hirohiko'
+    ],
+    [
+        'kimetsu-no-yaiba',
+        '205',
+        '9.16',
+        'Japan',
+        'English',
+        'https://youtu.be/So_71Qwo06U',
+        'Gotouge Koyoharu'
+    ],
+    [
+        'yakusoku-no-neverland',
+        '181',
+        '9.15',
+        'Japan',
+        'English',
+        'https://youtu.be/ApLudqucq-s',
+        'Kaiu Shirai'
+    ],
+    [
+        'Spirit-Blade-Mountain',
+        '458',
+        '8.91',
+        'Japan',
+        'English',
+        '#',
+        'Xian man dong man'
     ]
-
 ]
 var names_list=[
 "Solo-Leveling",
@@ -101,5 +154,11 @@ var names_list=[
 'black-clover',
 'One-piece',
 'Tokyo-Ghoul',
-'Tales-of-Demons-and-Gods'
+'Tales-of-Demons-and-Gods',
+'Nanatsu-no-Taizai',
+'Haikyuu',
+'Jojos-Bizarre-Adventure',
+'kimetsu-no-yaiba',
+'yakusoku-no-neverland',
+'Spirit-Blade-Mountain'
 ];

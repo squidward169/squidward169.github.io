@@ -103,7 +103,7 @@ main{
     display: flex;
     flex-direction: column;
     width:15em;
-    height:20em;
+    height:27em;
     &.-photo,a{
       box-shadow: none;
       top:2%;
@@ -260,13 +260,14 @@ $icon: 400 1em/50px 'FontAwesome';
 }
 ::-webkit-scrollbar {
   width: 6px;
+  background: $back-color;
 }
 ::-webkit-scrollbar-track {
-    background: white;
+    background: $back-color;
   }
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: $main-color;
+    background: $back-color;
     border-radius: 20px;
     &:hover{
       background: linear-gradient($main-color,#fff);

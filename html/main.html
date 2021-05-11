@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/logo.png" sizes="64*64 48x48">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/lightslider.css">
+    <script src="../js/slider.js"></script>
+    <script src="../js/lightslider.js"></script>
+    <title>MangaX</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="../img/logo.png" alt="logo"><span><h6>MangaX</h6></span></a>
+        <ul class="header-nav">
+            <li><a href="#">Shows</a></li>
+            <li><a href="#"  class="active">Manga</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">Premium <sup>TRY FREE</sup> </a></li>
+        </ul>
+        <div class="social">
+          <ul>
+            <li class="facebook"></li>
+            <li class="twitter"></li>
+            <li class="google"></li>
+            <li class="instagram"></li>
+          </ul>
+        </div>
+        <ul class="form">
+            <li><a href="#"><img src="../img/profile.png" id="profile" alt="" width="15px" onmouseover="hover(this)" onmouseout="unhover(this)"><p>Login</p></a></li>
+            <li><a href="#"><img src="../img/trend.png" id="trend" alt="" width="15px"  onmouseover="hover(this)" onmouseout="unhover(this)"><p>Trending</p></a></li>
+            <li><a href="#"><img src="../img/random.png" id="random" alt="" width="20px"  onmouseover="hover(this)" onmouseout="unhover(this)"><p>Random</p></a></li>
+        </ul>
+        <div  class="wrapper">
+            <img class="search-icon" src="../img/search.png"/>
+            <input onkeypress="get_event(event)" placeholder="Anime,manga,etc"
+                   type="text"
+                   class="search">
+        </div>
+
+    </header>
+    <div class="char_box">
+            <ul>
+                <li><img src="../img/anime_img_3.png" alt=""></li> 
+                <li><img src="../img/anime_img_4.png"  alt=""></li>  
+                <li><img src="../img/anime_img_5.png" class="mid" alt=""></li>  
+                <li><img src="../img/chika.gif" class="gif" alt=""></li>
+                <li><img src="../img/anime_img_1.png" alt=""></li>
+                <li><img src="../img/anime_img_2.png" alt=""></li>
+                <li><img src="../img/anime_img_6.png" class="left" alt=""></li>
+            </ul>
+    </div>
+    <main>
+        <div class="main_container">
+            <div class="tabs">
+                <div class="location">
+                    <h3 onclick="star()">Manga</h3>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="#" class="active">Popular</a></li>
+                        <li><a href="#">My list</a></li>
+                        <li><a href="#">Updated</a></li>
+                        <li><a href="#">Alphabetical</a></li>
+                        <li><a href="#">Hentai</a></li>
+                    </ul>
+                </div>
+           </div>
+           <img src="../img/figure1.png" class="figure _first" alt="">
+           <div class="slider">
+            <ul id="autoWidth" class="cs-hidden">
+                <li class="item-a">
+                  <div class="post" id="jujutsu-kaisen" onclick="give_name(this.id)"><a href="Anime-Page.html"><div class="post -photo"><img class="post -photo -image" id="jujutsu-kaisen" onmouseover="gif(this)" onmouseout="pic(this)" src="../cover/jujutsu-kaisen.jpg"></div></a></div>
+                </li>
+                <li class="item-b">
+                  <div class="post" id="Black-clover" onclick="give_name(this.id)"><a href="Anime-Page.html"><div class="post -photo"><img class="post -photo -image" id="Black-clover" onmouseover="gif(this)" onmouseout="pic(this)" src="../cover/Black-clover.jpg"></div></a></div>
+                </li>
+                <li class="item-c">
+                  <div class="post" id="Attack-on-titan" onclick="give_name(this.id)"><a href="Anime-Page.html"><div class="post -photo"><img class="post -photo -image" id="Attack-on-titan" onmouseover="gif(this)" onmouseout="pic(this)"src="../cover/Attack-on-titan.jpg"></div></a></div>
+                </li>
+                <li class="item-d">
+                  <div class="post" id="jujutsu-kaisen" onclick="give_name(this.id)"><a href="Anime-Page.html"><div class="post -photo"><img class="post -photo -image" id="Berserk" onmouseover="gif(this)" onmouseout="pic(this)" src="../cover/Berserk.jpg"></div></a></div>
+                </li>
+                <li class="item-e">
+                  <div class="post" id="Love-is-war" onclick="give_name(this.id)"><a href="Anime-Page.html"><div class="post -photo"><img class="post -photo -image"id="Love-is-war"  onmouseover="gif(this)" onmouseout="pic(this)" src="../cover/Love-is-war.jpg"></div></a></div>
+                </li>
+                <li class="item-g">
+                  <div class="post" id="One-Piece" onclick="give_name(this.id)"><a href="Anime-Page.html"><div class="post -photo"><img class="post -photo -image" id="One-Piece"  onmouseover="gif(this)" onmouseout="pic(this)" src="../cover/One-Piece.jpg"></div></a></div>
+                </li>
+             </ul>
+           </div>
+            <div class="content"></div>
+    </main>
+    </object>
+    <script src="../js/main_container.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/content.js"></script>
+    <script src="../js/get_manga.js"></script>
+</body>
+</html>

@@ -61,6 +61,15 @@ let information_list=[
         'English',
         '#',
         'Tabata Yuuki'
+    ],
+    [
+        'one-piece-1',
+        '1000',
+        '9.18',
+        'Japan',
+        'English',
+        '#',
+        'oda'
     ]
 
 ]
@@ -71,6 +80,7 @@ var names_list=[
 'Shingeki-no-Kyojin',
 "Boku-no-Hero-Academia",
 "Berserk",
-'black-clover'
+'black-clover',
+'one-piece'
 
 ];

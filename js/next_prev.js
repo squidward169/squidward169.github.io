@@ -7,7 +7,7 @@ manga_name=manga_name1.toLocaleLowerCase();
 var e=1;
 var link="https://www.funmanga.com/"+manga_name+"/"+chapter_opened+"/1";
 $(frame).attr('data',link)
-alert(link)
+
 function prev(){
     if(e>1){
         e--

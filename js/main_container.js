@@ -43,6 +43,24 @@ let information_list=[
         'English',
         'https://youtu.be/Q8bmv-14OVI',
         'HORIKOSHI Kouhei'
+    ],
+    [
+        'Berserk',
+        "363",
+        "9.11",
+        "Japan",
+        "Enlish",
+        "#",
+        "MIURA Kentaro"
+    ],
+    [
+        'black-clover',
+        '292',
+        '9.18',
+        'Japan',
+        'English',
+        '#',
+        'Tabata Yuuki'
     ]
 
 ]
@@ -51,6 +69,8 @@ var names_list=[
 "The-Beginning-After-The-End",
 "Jujutsu-Kaisen",
 'Shingeki-no-Kyojin',
-"Boku-no-Hero-Academia"
+"Boku-no-Hero-Academia",
+"Berserk",
+'black-clover'
 
 ];

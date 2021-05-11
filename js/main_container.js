@@ -74,7 +74,7 @@ let information_list=[
 
 ]
 var names_list=[
-"Solo-leveling",
+"Solo-Leveling",
 "The-Beginning-After-The-End",
 "Jujutsu-Kaisen",
 'Shingeki-no-Kyojin',

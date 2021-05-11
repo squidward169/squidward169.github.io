@@ -70,11 +70,28 @@ let information_list=[
         'English',
         '#',
         'oda'
+    ],
+    [
+        'tokyo_ghoul_re',
+        '179',
+        '9.14',
+        'Japan',
+        'English',
+        'https://youtu.be/ETHpMMV8rJU',
+        "ISHIDA Sui"
+    ],
+    [
+        'Tales-of-Demons-and-Gods',
+        '326',
+        '8.6',
+        'Japan',
+        'English',
+        '#',
+        'Mad Snail'
     ]
 
 ]
 var names_list=[
-    "",
 "Solo-Leveling",
 "The-Beginning-After-The-End",
 "Jujutsu-Kaisen",
@@ -82,5 +99,7 @@ var names_list=[
 "Boku-no-Hero-Academia",
 "Berserk",
 'black-clover',
-'One-piece'
+'One-piece',
+'Tokyo-Ghoul',
+'Tales-of-Demons-and-Gods'
 ];

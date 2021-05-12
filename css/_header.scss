@@ -177,10 +177,10 @@ header{
     }
   }
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width:720px) {
     header{
         & .logo{
-            left:42%;
+            left:40%;
         }
         & ul{
             display: none;

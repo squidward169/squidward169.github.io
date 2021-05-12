@@ -103,7 +103,7 @@ main{
     display: flex;
     flex-direction: column;
     width:15em;
-    height:27em;
+    height:20em;
     &.-photo,a{
       box-shadow: none;
       top:2%;
@@ -126,7 +126,7 @@ main{
 .slider{
     position:relative;
     top:5%;
-    height: 50%;
+    height: 23em;
     width:100%;
     left:0;
     display: flex;
@@ -142,9 +142,11 @@ main{
     }
 }
 .slider li{
-        width:15em;
-        margin: 20px;
-        height: 23em;
+  position: relative;
+  top:-2em;
+  width:15em;
+  margin: 20px;
+  height: 25em;
         &>.post{
           margin-right: 25px;
           position: relative;
@@ -175,6 +177,9 @@ $icon: 400 1em/50px 'FontAwesome';
     top:45vh;
     left:2vh;
     opacity: 0.5;
+    &:hover{
+      opacity: 1;
+    }
     ul{
       &:hover{
         opacity: 1;

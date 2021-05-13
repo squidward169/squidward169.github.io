@@ -1,3 +1,4 @@
+
 @media screen and (max-width:450px) {
     header{
         height:5%;
@@ -53,6 +54,75 @@
         width:15vh;
         height:20vh;
         left:.5%;
+      }
+      .slider{
+        position: absolute;
+        top:1%;
+        width:100%;
+        left:-8%;
+        height:auto;
+      }
+      .slider li{
+        width:12em;
+        height: 15em;
+        margin: 10px;
+        top:-3%;
+      }
+      .figure{
+        display: none;
+      }
+      .social{
+        top:80vh;
+      }
+}
+@media screen and (max-width:375px) {
+
+    .char_box{
+        height: 10%;
+        display: none;
+    }
+    .wrapper {
+        display: none;
+      }
+      .main_container{
+        width:100%;
+      }
+      .tabs{
+        width:100%;
+        left:-10%;
+        top:-15%;
+      }
+      .location{
+          & h3{
+              width:25%;
+              left:38%
+          }
+      }
+      .nav{
+        & ul{
+            top:60%;
+            left:5%;
+            width:100%;
+            gap:10px;
+            & li{
+                & a{
+                    font-size:.9em;
+                }
+            }
+        }
+    }
+    #hentai,#alpha{
+      display: none;
+    }
+      .content{
+        width:100%;
+        top:35%;
+        background-color: yellow;
+      }
+      .post{
+        width:13vh;
+        height:19vh;
+        left:0%;
       }
       .slider{
         position: absolute;

@@ -177,20 +177,3 @@ header{
     }
   }
 }
-@media screen and (max-width:500px) {
-    header{
-        height: 5%;
-        & .logo{
-            left:30%;
-        }
-        & ul{
-            display: none;
-        }
-    }
-    .char_box{
-        height: 10%;
-    }
-    .wrapper {
-        display: none;
-      }
-}

@@ -25,9 +25,7 @@ var main_list={
         "Solo-Leveling",
         "The-Beginning-After-The-End",
     ],
-    "Alphabetical":[
-
-    ],
+    "Alphabetical":names_list.sort(),
     "Hentai":[
 
     ]

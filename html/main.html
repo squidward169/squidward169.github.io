@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/logo.png" sizes="64*64 48x48">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main_style.css">
+    <link rel="stylesheet" href="../css/lightslider.css">
+    <script src="../javascript/slider.js"></script>
+    <script src="../javascript/Jquery.js"></script>
+    <title>MangaX</title>
+</head>
+<body>
+    <header>
+        <!--___________________logo_______________________-->
+
+        <a href="main.html" class="header -logo"><img src="../img/logo.png" alt="logo"><span><h6>MangaX</h6></span></a>
+
+        <!--_______________main navigation________________-->
+        <nav>
+            <ul class="header-nav">
+                <li><a href="#">Shows</a></li>
+                <li><a href="main.html"  class="active_top">Manga</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Premium <sup>TRY FREE</sup> </a></li>
+            </ul>
+        </nav>
+        <!--_____________social links_______________________-->
+        <div class="header -social">
+            <ul>
+              <a href="https://www.facebook.com/edam.760" target="_blank"><li class="facebook"></li></a>
+              <a href="https://twitter.com/?lang=en"><li class="twitter" target="_blank"></li></a>
+              <a href="https://www.youtube.com/watch?v=6KDaT6jWTSo&ab_channel=AniMelodyAniMelodyVerified"><li class="google"></li></a>
+              <a href="https://www.instagram.com/edam__bahloul/" target="_blank"><li class="instagram"></li></a>
+            </ul>
+        <!--__________________buttons______________________-->
+        </div>
+        <ul class="form">
+            <li><a href="#"><img src="../img/profile_button.png" id="profile_button" alt="PP" width="15px" onmouseover="hover(this)" onmouseout="unhover(this)"><p>Login</p></a></li>
+            <li><a href="../html/main.html"><img src="../img/trending_button.png" id="trending_button" alt="T" width="15px"  onmouseover="hover(this)" onmouseout="unhover(this)"><p>Trending</p></a></li>
+            <li><a href="#"><img src="../img/random_button.png" id="random_button" alt="R" width="20px"  onmouseover="hover(this)" onmouseout="unhover(this)" onclick="random_manga()"><p>Random</p></a></li>
+        </ul>
+        <!--_____________search-bar__________________________-->
+        <div  class="wrapper">
+            <img class="search-icon" src="../img/search.png"/>
+            <input onkeypress="get_event(event)" placeholder="Anime,manga,etc" type="text" class="search-box">
+        </div>
+        <!--_____________charachters-box_____________________-->
+        <div class="header -ads_box">
+            <ul>
+                <li><img src="../img/anime_img_3.png" alt=""></li> 
+                <li><img src="../img/anime_img_4.png"  alt=""></li>  
+                <li><img src="../img/anime_img_5.png" class="mid" alt=""></li>  
+                <li><img src="../img/chika.gif" class="gif" alt=""></li>
+                <li><img src="../img/anime_img_1.png" alt=""></li>
+                <li><img src="../img/anime_img_2.png" alt=""></li>
+                <li><img src="../img/anime_img_6.png" class="left" alt=""></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="main_container">
+            <div class="main_container -tabs">
+                <div class="location">
+                    <h3 onclick="star()">Manga</h3>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="#" onclick="change_dir(this)" class="active">Popular</a></li>
+                        <li><a href="#" onclick="change_dir(this)" class="Notactive">My list</a></li>
+                        <li><a href="#" onclick="change_dir(this)" class="Notactive">Updated</a></li>
+                        <li><a href="#" onclick="change_dir(this)" class="Notactive">Alphabetical</a></li>
+                        <li><a href="#" onclick="change_dir(this)" class="Notactive" id="hentai">Hentai</a></li>
+                    </ul>
+                </div>
+           </div>
+           <img src="../img/figure1.png" class="figure _first" alt="">
+           
+           <div class="slider">
+            <ul id="autoWidth" class="cs-hidden">
+                <li class="item-a">
+                  <div class="post" id="The-Beginning-After-The-End" onclick="give_name(this.id)">
+                    <a href="../html/chapters.html">
+                      <div class="post -photo">
+                      <img class="post -photo -image" src="../covers/The-Beginning-After-The-End.jpg" id="The-Beginning-After-The-End" onmouseover="gif(this)" onmouseout="pic(this)">
+                      </div>
+                    </a>
+                  </div>
+                </li>
+                <li class="item-b">
+                  <div class="post" id="The-Beginning-After-The-End" onclick="give_name(this.id)">
+                    <a href="../html/chapters.html">
+                      <div class="post -photo">
+                      <img class="post -photo -image" src="../covers/The-Beginning-After-The-End.jpg" id="The-Beginning-After-The-End" onmouseover="gif(this)" onmouseout="pic(this)">
+                      </div>
+                    </a>
+                  </div>
+                </li>
+                <li class="item-c">
+                  <div class="post" id="The-Beginning-After-The-End" onclick="give_name(this.id)">
+                    <a href="../html/chapters.html">
+                      <div class="post -photo">
+                      <img class="post -photo -image" src="../covers/The-Beginning-After-The-End.jpg" id="The-Beginning-After-The-End" onmouseover="gif(this)" onmouseout="pic(this)">
+                      </div>
+                    </a>
+                  </div>
+                </li>
+                <li class="item-d">
+                  <div class="post" id="The-Beginning-After-The-End" onclick="give_name(this.id)">
+                    <a href="../html/chapters.html">
+                      <div class="post -photo">
+                      <img class="post -photo -image" src="../covers/The-Beginning-After-The-End.jpg" id="The-Beginning-After-The-End" onmouseover="gif(this)" onmouseout="pic(this)">
+                      </div>
+                    </a>
+                  </div>
+                </li>
+                <li class="item-e">
+                  <div class="post" id="The-Beginning-After-The-End" onclick="give_name(this.id)">
+                    <a href="../html/chapters.html">
+                      <div class="post -photo">
+                      <img class="post -photo -image" src="../covers/The-Beginning-After-The-End.jpg" id="The-Beginning-After-The-End" onmouseover="gif(this)" onmouseout="pic(this)">
+                      </div>
+                    </a>
+                  </div>
+                </li>
+                <li class="item-g">
+                  <div class="post" id="The-Beginning-After-The-End" onclick="give_name(this.id)">
+                    <a href="../html/chapters.html">
+                      <div class="post -photo">
+                      <img class="post -photo -image" src="../covers/The-Beginning-After-The-End.jpg" id="The-Beginning-After-The-End" onmouseover="gif(this)" onmouseout="pic(this)">
+                      </div>
+                    </a>
+                  </div>
+                </li>
+             </ul>
+           </div>
+            <div class="content">
+                <div class="content -header">
+                    <h3 class="content_location">Popular : </h3>
+                    <div class="line"></div>
+                    <h5>See more..</h5>
+                </div>
+                <div class="content_container"></div>
+            </div>
+        </div>
+    </main>
+    <script src="../javascript/main_container.js"></script>
+    <script src="../javascript/main.js"></script>
+    <script src="../javascript/content.js"></script>
+    <script src="../javascript/get_manga.js"></script>
+    <script src="../javascript/buttons.js"></script>
+    <script src="../javascript/Change_content.js"></script>
+</body>
+</html>

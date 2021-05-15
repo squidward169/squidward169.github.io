@@ -1,0 +1,19 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    min-height: 100vh;
+    background-color: $background-first-color;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: $background-first-color;
+    display: none;
+  }
+  ::-webkit-scrollbar-track {
+    display: none;
+}

@@ -1,0 +1,127 @@
+body{
+    min-height:160vh;
+}
+.btn-arrow {
+    color: transparent;
+    display: block;
+    margin: 3rem;
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    background-color: rgba(rgb(255, 15, 15), .05);
+
+    transition: all 150ms ease-out;
+
+    &::before,
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+            top: 0;
+            left: 0;
+
+        background-color: #ffffff;
+        
+        transition: all 150ms ease-out;
+    }
+
+    &::before {
+        width: 75%;
+        height: 25%;
+    }
+
+    &::after {
+        width: 25%;
+        height: 75%;
+    }
+
+    &:hover, &:focus {
+        background-color: rgba(black, .1);
+        
+        &::before,
+        &::after {
+            background-color: #404040;
+        }
+    }
+
+    &.btn-arrow-left,
+    &.btn-arrow-right {
+        &::before,
+        &::after {
+            top: 12.5%;
+            left: 12.5%;
+        }
+    }
+
+    &.btn-arrow-left {
+        transform: rotate(-45deg);
+    }
+
+    &.btn-arrow-right {
+        transform: rotate(135deg);
+    }
+}
+#next{
+    position: fixed;
+    top:40%;
+    left:5%;
+    z-index: 100;
+}
+#prev{
+    position: fixed;
+    top:40%;
+    right:5%;
+    z-index: 100;
+}
+.content{
+    overflow: hidden;
+    width:70%;
+    align-items: center;
+    height: 140vh;
+    background-color: #fff;
+    position: absolute;
+    left:15%;
+    top:10%;
+    display: flex;
+    justify-content: center;
+    & object{
+        height: 270vh;
+        left:0px;
+        width:100%;
+        overflow-x: hidden;
+        
+    }
+}
+.hide{
+    width:70%;
+    height: 20vh;
+    background-color: #fff;
+ 
+    &._top{
+        position: absolute;
+        left:15%;
+        top:0%;
+    }
+
+    &._bottom{
+        position: absolute;
+        left:15%;
+        top:149vh;
+        z-index: 100;
+    }
+    &._left{
+        position: absolute;
+        left:15%;
+        width:10vh;
+        height: 160vh;
+        z-index: 100;
+    }
+    &._right{
+        position: absolute;
+        right:15%;
+        width:10vh;
+        height: 160vh;
+        z-index: 100;
+    }
+}

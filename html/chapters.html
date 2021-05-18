@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/main_style.css">
+    <link rel="stylesheet" href="../css/chapters.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/logo.png" sizes="64*64 48x48">
+    <title>MangaX</title>
+</head>
+<body>
+    <header>
+        <!--___________________logo_______________________-->
+
+        <a href="main.html" class="header -logo"><img src="../img/logo.png" alt="logo"><span><h6>MangaX</h6></span></a>
+
+        <!--_______________main navigation________________-->
+        <nav>
+            <ul class="header-nav">
+                <li><a href="#">Shows</a></li>
+                <li><a href="main.html"  class="active_top">Manga</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Premium <sup>TRY FREE</sup> </a></li>
+            </ul>
+        </nav>
+        <!--_____________social links_______________________-->
+        <div class="header -social">
+            <ul>
+              <a href="https://www.facebook.com/edam.760" target="_blank"><li class="facebook"></li></a>
+              <a href="https://twitter.com/?lang=en"><li class="twitter" target="_blank"></li></a>
+              <a href="https://www.youtube.com/watch?v=6KDaT6jWTSo&ab_channel=AniMelodyAniMelodyVerified"><li class="google"></li></a>
+              <a href="https://www.instagram.com/edam__bahloul/" target="_blank"><li class="instagram"></li></a>
+            </ul>
+        <!--__________________buttons______________________-->
+        </div>
+        <ul class="form">
+            <li><a href="#"><img src="../img/profile_button.png" id="profile_button" alt="PP" width="15px" onmouseover="hover(this)" onmouseout="unhover(this)"><p>Login</p></a></li>
+            <li><a href="../html/main.html"><img src="../img/trending_button.png" id="trending_button" alt="T" width="15px"  onmouseover="hover(this)" onmouseout="unhover(this)"><p>Trending</p></a></li>
+            <li><a href="#"><img src="../img/random_button.png" id="random_button" alt="R" width="20px"  onmouseover="hover(this)" onmouseout="unhover(this)" onclick="random_manga()"><p>Random</p></a></li>
+        </ul>
+        <!--_____________search-bar__________________________-->
+        <div  class="wrapper">
+            <img class="search-icon" src="../img/search.png"/>
+            <input onkeypress="get_event(event)" placeholder="Anime,manga,etc" type="text" class="search-box">
+        </div>
+        <!--_____________charachters-box_____________________-->
+        <div class="header -ads_box">
+            <ul>
+                <li><img src="../img/anime_img_3.png" alt=""></li> 
+                <li><img src="../img/anime_img_4.png"  alt=""></li>  
+                <li><img src="../img/anime_img_5.png" class="mid" alt=""></li>  
+                <li><img src="../img/chika.gif" class="gif" alt=""></li>
+                <li><img src="../img/anime_img_1.png" alt=""></li>
+                <li><img src="../img/anime_img_2.png" alt=""></li>
+                <li><img src="../img/anime_img_6.png" class="left" alt=""></li>
+            </ul>
+        </div>
+    </header>
+    <main class="home">
+        <div class="main-container">
+            <div class="background"></div>
+            <div class="card">
+                <img class="cover" src="" alt="">
+                <div class="trailer">
+                    <a class="link">
+                        <i class="fa fa-youtube-play"></i>
+                        <h2>Trailer</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="info" >
+                <h1 class="name"></h1>
+                <div class="info_boxs">
+                    <span><i class="fa fa-star"></i>Rating :<span id="rating">8.58</span></span>
+                    <span><i class="fa fa-fw fa-globe"></i>Country :<span id="country">Japan</span></span>
+                    <span><i class="fa fa-fw fa-globe"></i>Auther :<span id="state">Ended</span></span>
+                    <span><i class="fa fa-fw fa-language"></i>Language : <span>Japanese</span></span>
+                </div>
+                <div class="genra">
+                    <span><a href="#" rel="tag">romance</a>
+                    <a href="#" rel="tag">fight</a>
+                    <a href="#" rel="tag">action</a>
+                    <a href="#" rel="tag">drama</a>
+                    <a href="#" rel="tag">life</a>
+                    </span>
+                </div>
+                <div class="disc">
+                    <h3>Description :</h3>
+                    <p class="dis_box">---</p>
+                </div>
+            </div>
+        <div class="chapters">
+            <div class="chapters_header">
+                <h3 class="content_location">Chapters : </h3>
+                <hr>
+                <div  class="wrapper">
+                    <img class="search-icon" src="../img/search.png"/>
+                    <input onkeypress="search(event)" placeholder="Chapter  :" type="text" class="search-box-chapters">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../javascript/main_container.js"></script>
+    <script src="../javascript/generate-info.js"></script>
+    <script src="../javascript/Generate-episodes.js"></script>
+    <script src="../javascript/get_chapter.js"></script>
+    <script src="../javascript/buttons.js"></script>
+</body>
+</html>

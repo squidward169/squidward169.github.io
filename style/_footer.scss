@@ -1,0 +1,108 @@
+
+.footer{
+    z-index: 4;
+    width:100%;
+    height:50vh;
+    background-color: #0e1318;
+    box-shadow: 0 8px 12px 10px rgba(20, 20, 22, 0.37);
+    & a{
+        text-decoration: none;
+    }
+    &.-header{
+        width:100%;
+        height: 75%;
+        display: flex;
+        align-items: center;
+        & h2{
+            color: $text-color;
+            font-family: $main-font;
+            font-weight: 300;
+            letter-spacing: .08em;
+            line-height: 45px;
+        }
+        & .arrow{
+            position: relative;
+            left:95%;
+            top:-30%;
+            padding:15px 15px 15px 15px;
+            border-radius: 20px;
+            border: 2px solid white;
+            & a{
+                width:100%;
+                height: 100%;
+            }
+            & span{
+                color: white;
+            }
+        }
+        & .about{
+            position: relative;
+            left:6%;
+            width: 40%;
+            height: 75%;
+            & p{
+                color: #677367;
+                font-family: $main-font;
+                font-weight: 400;
+            }
+        }
+        & .links{
+            position: relative;
+            left:25%;
+            & ul{
+                list-style: none;
+                & a{
+                    text-decoration: none;
+                    & li{
+                        color: #677367;
+                        font-family: $main-font;
+                        font-weight: 400;
+                        margin-top: .7em;
+                        transition: .3s;
+                        &:hover{
+                            color: $main-color;
+                        }
+                    }
+                }
+
+            }
+        }
+        & .favorite{
+            position: relative;
+            left:15%;
+            & ul{
+                list-style: none;
+                & a{
+                    text-decoration: none;
+                    & li{
+                        color: #677367;
+                        font-family: $main-font;
+                        font-weight: 400;
+                        margin-top: .7em;
+                        transition: .3s;
+                        &:hover{
+                            color: $main-color;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+    & hr{
+        position: relative;
+        width:80%;
+        left:10%;
+        border-radius: 25px;
+    }
+    &.-copyright{
+        width:100%;
+        height: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #677367;
+        font-family: $main-font;
+        font-weight: 400;
+    }
+}

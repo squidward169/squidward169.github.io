@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    min-height: 100vh;
+    background: url("../img/logos/background.png");
+}
+a{
+    text-decoration: none;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: yellow;
+    display: none;
+  }
+  ::-webkit-scrollbar-track {
+    display: none;
+}
+@keyframes sonarWave {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      transform: scale(2);
+      opacity: 0;
+    }
+}
+@keyframes show-info {
+  from{
+    top:70%;
+    opacity: 0;
+  }
+  to{
+    top:0;
+    opacity:.7;
+  }
+}

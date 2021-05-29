@@ -1,0 +1,206 @@
+.circle{
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(30%,-50%);
+    transition: .5s;
+    background: url("../img//logos/circle.png");
+    box-shadow:
+      0 0 200px 70px #6d3737,;
+
+}
+#big-circle{
+        top:50%;
+        left:45%;
+        width: 35em;
+        height: 35em;
+        transform: .7s ease-in;
+        
+}
+#small-circle{
+        top:100%;
+        left:35%;
+        width: 10em;
+        height: 10em;
+        box-shadow:
+        0 0 200px 10px #6d3737,
+}
+main{
+    width:100%;
+    height:85vh;
+}
+.text-box{
+    position: relative;
+    left:7%;
+    top:12vh;
+    z-index: 100;
+    transition: .7s ease-in-out;
+    width:50%;
+    height:50%;
+    text-overflow: hidden;
+    font-family: $main-font;
+    mix-blend-mode:color-dodge;
+    user-select: none;
+    & h1{
+        font-weight: 700;
+        letter-spacing: .1em;
+        margin:15px 0px;
+        font-size: 50px;
+        color: $main-color;
+    }
+    & .p1{
+        color:$text-color;
+        font-weight: 500;
+        letter-spacing: .1em;
+    }
+    & .p2{
+        width:70%;
+        font-weight: 100;
+        letter-spacing: 0em;
+        line-height: 1.8em;
+        color: $text-color;
+        & span{
+            font-size: 100px;
+            position: absolute;
+            top:50%;
+            left:-6%;
+        }
+    }
+}
+.character-pic{
+    position: absolute;
+    bottom: -1vh;
+    right:4.5%;
+    z-index: 100;
+    transition: .7s;
+}
+
+.more{
+    width:25%;
+    height:10vh;
+    position: relative;
+    top:18%;
+    left:12%;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    z-index: 100;
+    & span{
+        color: white;
+        font-family: $main-font;
+        font-weight: 300;
+        letter-spacing: 0em;
+    }
+}
+
+.button-wrapper {
+    position: relative;
+    z-index: 100;
+    cursor: pointer;
+    transition: .7s;
+  }
+  
+.button-emitter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 32px auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: white solid 1px;
+}
+.sonar-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: white solid 1px;
+    opacity: 0;
+    z-index: -1;
+    pointer-events: none;
+}
+  
+.sonar-wave1 {
+    animation: sonarWave 2s linear infinite;
+}
+  
+.sonar-wave2 {
+    animation: sonarWave 2s 1s linear infinite;
+}
+.pineapple{
+    position: absolute;
+    width:10em;
+    height: 10em;
+    transition: .7s;
+    display: none;
+}
+.nav_bottem_wrapper{
+    position: relative;
+    top:22%;
+    z-index: 100;
+    left:12%;
+    & .nav_line{
+        width:15%;
+        height:.3em;
+        border-radius: 25px;
+        background-color: #1a1818ea;
+        opacity: .7;
+        & .inner{
+            width:50%;
+            height:.3em;
+            border-radius: 25px;
+            position: relative;
+            top:0;
+            left:0;
+            background-color: #fff;
+            transition: .7s ease-in-out;
+        }
+    }
+    & span{
+        color: white;
+        font-family: $main-font;
+        position: relative;
+        top:-2vh;
+        left:-3%;
+        border-right: white solid 1px;
+        padding: 0 12px 0 0;
+    }
+}
+@keyframes sonarWave {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+@keyframes circle_to_triangle {
+    to{
+        left:-90vh;
+        z-index: 5;
+        width:300vh;
+        height: 350vh;
+        clip-path: polygon(75% 10%, 100% 75%, 0% 75%);
+    }
+}
+@keyframes triangle_to_circle {
+    from{
+        left:-90vh;
+        z-index: 5;
+        width:300vh;
+        height: 350vh;
+        clip-path: polygon(75% 10%, 100% 75%, 0% 75%);
+    }
+    to{
+        top:50%;
+        left:45%;
+        width: 35em;
+        height: 35em;
+        clip-path:circle(75% 10%, 100% 75%, 0% 75%);
+        background-color: white;
+    }
+}

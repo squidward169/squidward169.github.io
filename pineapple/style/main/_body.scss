@@ -1,0 +1,15 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+body{
+    width:100%;
+    min-height: 100vh;
+    background: url("../img/logos/background.png");
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+}

@@ -1,0 +1,52 @@
+header{
+    position: relative;
+    top:1vh;
+    width:50%;
+    height:15vh;
+    z-index: 100;
+}
+.header-container{
+    display: inline-flex;
+    width:100%;
+    height:15vh;
+    & .-logo{
+        position: relative;
+        top:8%;
+        right:2%;
+        width:6em;
+        height: 6em;
+        margin-left: 3em;
+    }
+    & .-nav{
+        width:100%;
+        height: 15vh;
+        & li{
+            cursor: pointer;
+            display: inline-flex;
+            margin-left: 10px;
+            position: relative;
+            top:5vh;
+            padding: 5px 20px 5px 20px;
+            font-family: $main-font;
+            font-weight: 200;
+            font-size: 1.1em;
+            color: white;
+            border-radius: 20px;
+            transition: .3s;
+            & hr{
+                position: absolute;
+                border:none;
+                top:90%;
+                width:0%;
+                border-radius: 25px;
+                height: 4px;
+                background: $main-color;
+                transition: .3s;
+            }
+            &:hover hr{
+                width:50%;
+            }
+        }
+    }
+}
+
